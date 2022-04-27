@@ -1,15 +1,18 @@
-function padder(count) {
-  // const padding = "".padStart(count, "0");
-  console.log("x");
-  return () => {
-    const padding = "".padStart(count, "0");
-    console.log("y");
-    return padding;
-  };
-}
+const calc = () => ({
+  result: 0,
+  add: function (num) {
+    this.result += num;
+    return this;
+  },
+  substract: function (num) {
+    this.result -= num;
+    return this;
+  },
+  multiply: function (num) {
+    this.result *= num;
+    return this;
+  },
+});
 
-const padder5 = padder(5);
-
-console.log(padder5());
-console.log(padder5());
-console.log(padder5());
+const result = calc.add(10).multiply(5).substract(30).add(10);
+console.log(result, "result");
