@@ -1,0 +1,5 @@
+﻿  index.c
+C:\Users\Monst\OneDrive\Belgeler\GitHub\javascript-playground\index.c(9,18): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Monst\OneDrive\Belgeler\GitHub\javascript-playground\index.c(19,14): warning C4047: 'function': 'const char *const ' differs in levels of indirection from 'int'
+C:\Users\Monst\OneDrive\Belgeler\GitHub\javascript-playground\index.c(19,9): warning C4024: 'printf': different types for formal and actual parameter 1
+  c-playground.vcxproj -> C:\Users\Monst\OneDrive\Belgeler\GitHub\javascript-playground\Debug\c-playground.exe

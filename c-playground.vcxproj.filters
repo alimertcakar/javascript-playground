@@ -18,5 +18,8 @@
     <ClCompile Include="index.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="leetcode\174\dp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
