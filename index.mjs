@@ -1,18 +1,13 @@
-const calc = () => ({
-  result: 0,
-  add: function (num) {
-    this.result += num;
-    return this;
-  },
-  substract: function (num) {
-    this.result -= num;
-    return this;
-  },
-  multiply: function (num) {
-    this.result *= num;
-    return this;
-  },
-});
+const chars = ["a", "b", "c"];
 
-const result = calc.add(10).multiply(5).substract(30).add(10);
-console.log(result, "result");
+let count = 0;
+
+function factorialLoop(n) {
+  if (n === 0) return;
+  for (let i = n; i > 0; i--) {
+    console.log(chars[chars.length % i] + n);
+    factorialLoop(n - 1);
+  }
+}
+
+factorialLoop(7);
