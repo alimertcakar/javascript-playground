@@ -10,5 +10,5 @@ function hasPair(arr, sum) {
   return result;
 }
 
-const result = hasPair([6, 4, 3, 2, 1, 7], 9);
+const result = hasPair([0, 9], 9);
 console.log(result, "result");
