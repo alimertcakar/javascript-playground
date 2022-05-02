@@ -1,13 +1,14 @@
-const chars = ["a", "b", "c"];
+// Better
+function hasPair(arr, sum) {
+  const pairs = {};
+  let result = false;
+  arr.forEach((item) => {
+    if (pairs[item]) result = true;
+    pairs[sum - item] = true;
+  });
 
-let count = 0;
-
-function factorialLoop(n) {
-  if (n === 0) return;
-  for (let i = n; i > 0; i--) {
-    console.log(chars[chars.length % i] + n);
-    factorialLoop(n - 1);
-  }
+  return result;
 }
 
-factorialLoop(7);
+const result = hasPair([6, 4, 3, 2, 1, 7], 9);
+console.log(result, "result");
