@@ -1,14 +1,21 @@
-// Better
-function hasPair(arr, sum) {
-  const pairs = {};
-  let result = false;
-  arr.forEach((item) => {
-    if (pairs[item]) result = true;
-    pairs[sum - item] = true;
-  });
+import { performance } from "perf_hooks";
 
-  return result;
+function main() {
+  const arr = [];
+  for (let i = 0; i < 100000000; i++) {
+    arr.push(i);
+  }
 }
 
-const result = hasPair([0, 9], 9);
-console.log(result, "result");
+function main2() {
+  const arr = Array(100000000);
+  for (let i = 0; i < 100000000; i++) {
+    arr[i] = i;
+  }
+}
+
+var startTime = performance.now();
+main(); // <---- measured code goes between startTime and endTime
+var endTime = performance.now();
+
+console.log(`Call to doSomething took ${endTime - startTime} milliseconds`);
