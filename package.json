@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node leetcode/217/index.mjs"
+    "start": "node leetcode/387/index.mjs"
   },
   "repository": {
     "type": "git",
