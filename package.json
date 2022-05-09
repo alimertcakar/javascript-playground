@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node misc-js/linkedList.mjs"
+    "start": "node misc-js/queue.mjs"
   },
   "repository": {
     "type": "git",
