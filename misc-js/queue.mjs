@@ -35,6 +35,10 @@ class Queue {
     this.first = oldFirst.next;
     return poppedItem;
   }
+
+  peek() {
+    return this.first;
+  }
 }
 
 const myQueue = new Queue();
