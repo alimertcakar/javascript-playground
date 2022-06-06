@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node misc-js/this.mjs"
+    "start": "node --inspect-brk misc-js/memoDp.mjs "
   },
   "repository": {
     "type": "git",
