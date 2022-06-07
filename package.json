@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --inspect-brk misc-js/memoDp.mjs "
+    "start": "node --inspect-brk leetcode/198.mjs "
   },
   "repository": {
     "type": "git",
