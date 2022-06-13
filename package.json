@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node  leetcode/198/index.mjs ",
-    "dev": "node --inspect-brk leetcode/198/index.mjs "
+    "start": "node  misc-js/playground.mjs ",
+    "dev": "node --inspect-brk misc-js/fibo.mjs "
   },
   "repository": {
     "type": "git",
